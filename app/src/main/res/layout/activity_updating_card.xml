@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddingDeckActivity"
+    android:background="@color/purple"
+    >
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/card_background"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right|end"
+            android:padding="10dp"
+            android:text="X"
+            android:textAlignment="textEnd"
+            android:textColor="@color/lightPurple"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Update Card"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColorHint="@color/purple"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Enter Question"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/lightPurple" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/lightPurple"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Answer"
+                android:background="@drawable/rounded_edittext"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/lightPurple" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/updateCard"
+            android:layout_width="120dp"
+            android:layout_height="21dp"
+            android:layout_gravity="end"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/lightPurple"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="UPDATE"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
